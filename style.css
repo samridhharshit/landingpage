@@ -1,0 +1,277 @@
+nav,
+header,
+footer{
+    display: block;
+}
+
+body{
+    margin: 0;
+}
+
+nav{
+    margin: 0;
+    background: rgb(211, 204, 204);
+}
+nav ul{
+    margin:0;
+    padding: 0;
+    overflow: hidden;
+    
+}
+
+ul.top-nav li{
+    list-style: none;
+    float: left;
+}
+ul.top-nav li.top-nav-right{
+    list-style: none;
+    float: right;
+}
+ul.top-nav li a{
+    display: block;
+    text-decoration: none;
+    min-height: 16px;
+    text-align: center;
+    padding: 14px;
+    text-transform: capitalize;
+    color: #666;
+}
+
+ul.top-nav li a:hover{
+    background-color: #0080ff;
+    color:#fff;
+}
+
+ul.top-nav li.mobile-icon{
+    display: none;
+}
+
+.col-1 {width:8.33%;}
+.col-2 {width:16.66%;}
+.col-3 {width:25%;}
+.col-4 {width:33.33%;}
+.col-5 {width:41.66%;}
+.col-6 {width:50%;}
+.col-7 {width:58.33%;}
+.col-8 {width:66.66%;}
+.col-9 {width:75%;}
+.col-10 {width:83.33%;}
+.col-11 {width:91.66%;}
+.col-12 {width:100%;}
+
+.container{
+    width: 100%;
+    margin: auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.row::after{
+    display: table;
+    clear: both;
+    content: "";
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+
+#section-1-gradient{
+    background: linear-gradient(#076D,#65a5FF)
+}
+
+.leftside-col{
+    margin-left: 30%;
+}
+
+h1.large{
+    font-size: 56px;
+    color: #f0f8ff;
+    line-height: 70px;
+    
+}
+
+
+form h2{
+    color: #f0f8ff;
+    
+}
+
+input[type="text"]{
+    font-size: 20px;
+    width: 400px;
+    min-width: 100px;
+    padding: 5px;
+    border-radius: 7px;
+
+}
+
+.rightside-col{
+    margin-left: 15%;
+}
+
+.section2header{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+
+div.box{
+    background: #fff;
+    margin: 24px;
+    box-shadow: 0 0 0 2px rgb(211, 204, 204),
+    0 2px 3px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 20px 30px 40px 30px;
+    border-radius: 7px;
+}
+
+div.icon{
+    width: 100%;
+
+}
+label{
+    font-size: 35px;
+    font-weight: 600;
+}
+
+p{
+    font-size: 20px;
+    line-height:1.2;
+    
+}
+
+.col-12{
+    text-align: center;
+    padding: 20px 30px;
+}
+
+.col-12 button{
+    cursor: pointer;
+    font-size: 30px;
+    border-radius: 7px;
+    margin: auto;
+    display: block;
+    text-align: center;
+    background-color: #0080ff;
+    color: #fff;
+    padding: 15px 30px;
+}
+
+
+
+article p {
+    font-size: 24px;
+    width: 100%;
+    padding: 24px;
+
+}
+
+
+div.skateicon img {
+    display: block;
+    margin: auto;
+    box-shadow: 20px 20px 10px 10px rgba(0,0,0,.15),
+    2px 2px 4px 2px rgba(0,0,0,.1);
+
+}
+
+footer.footsy {
+    background-color: burlywood;
+    padding-left: 10%;
+}
+
+footer h1 {
+    color: #fff;
+    font-size: 35px;
+}
+
+footer ul{
+    list-style: none;
+    padding: 0;
+    color: #fff;
+    text-align: left;
+}
+
+/*#####################MOBILE SCREEN############################*/
+
+
+@media screen and (max-width:1029px){
+    ul.top-nav li:not(:nth-child(1)){
+        display: none;
+    }
+    ul.top-nav li.mobile-icon{
+        display: block;
+        float: right;
+    }
+
+    ul.top-nav.responsive li.mobile-icon{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+
+    ul.top-nav.responsive{
+        position: relative;
+    }
+
+    ul.top-nav.responsive li{
+        display: inline;
+        float: none;
+    }
+
+    ul.top-nav.responsive li a{
+        display: block;
+     text-align: center;
+    }
+
+    .col-7,
+    .col-6,
+    .col-5,
+    .col-4{
+        width: 100%;
+        margin: 0;
+    }
+    
+    div.leftside-col,
+    div.rightside-col{
+        margin: 15px;
+    }
+    
+    div.rightside-col iframe{
+        position: relative;
+        width: 100%;
+        margin: 0;
+        overflow: hidden;
+    }
+    
+    .section2header{
+        text-align: center;
+        font-size: 70px;
+        font-weight: 400;
+    }
+    
+    article p {
+        font-size: 27px;
+    }
+    
+    div.skateicon img {
+        width: 400px;
+        height: 250px;
+    }
+    
+    div.mobilestack{
+        width: 50%;
+        margin: 0;
+    }
+
+}
